@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Asap&family=Bungee+Spice&family=Dancing+Script:wght@400;500&family=Nabla&family=Nerko+One&family=Oswald:wght@500&family=Sono:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3, 1fr;
+  grid-template-areas:
+    "navbar"
+    "main"
+    "footer";
+}
+
+/*NAVBAR*/
+.navbar {
+  grid-area: navbar;
+  background-color: black;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoPrincipal {
+  height: 250px;
+  padding-top: 10px;
+}
+
+.logoPrincipal:hover {
+  transform: scaleX(1.2);
+  transition: 0.5s;
+}
+
+/*BOTONES SIGN IN/SIGN UP*/
+.btn-sign {
+  border-radius: 20px;
+  margin: 10px;
+  font-size: 20px;
+  width: 6em;
+  height: 2em;
+  text-align: center;
+  background-color: black;
+  border-style: none;
+  font-family: "Asap", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-sign:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: #f42a8b;
+}
+
+/*MAIN*/
+.main {
+  grid-area: main;
+  background-color: black;
+  height: 87vh;
+  background-image: url(imagenes/oscilatesvg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: "Asap", sans-serif;
+}
+
+.iscoming {
+  padding-top: 320px;
+  font-size: 30px;
+}
+
+.date {
+  padding: 10px;
+}
+
+/*BOTON TICKET*/
+.btn-go {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btnA {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+.btn-go svg {
+  margin-right: 3px;
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.btn-go span {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.btn-go:hover svg {
+  transform: translateX(5px) rotate(90deg);
+  color: #f42a8b;
+}
+
+.btn-go:hover span {
+  transform: translateX(7px);
+  color: #f42a8b;
+}
+
+/*OFF CODE*/
+.off {
+  padding: 10px;
+  font-size: 15px;
+  cursor: none;
+}
+
+.off:hover {
+  color: #f42a8b;
+  transform: rotate(5deg);
+}
+
+/*COUNTDOWN*/
+.container-count {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px;
+}
+.container-count div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-count .timer {
+  grid-row: 1/3;
+  justify-content: space-around;
+}
+.container-count .footer {
+  grid-row: 3/-1;
+  white-space: pre;
+  font-size: 12px;
+}
+
+.timer-item {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+}
+.timer-item .counter {
+  font-size: 5em;
+}
+.timer-item .text {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.rollIn {
+  animation-name: rollIn;
+}
+
+.animated {
+  animation-duration: 8s;
+  animation-fill-mode: both;
+}
+
+/*FOOTER*/
+.footer {
+  grid-area: footer;
+  height: 3vh;
+}
+
+.footer {
+  background-color: black;
+  font-family: "Asap", sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: static;
+}
+
+.itemfooter {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+
+.itemfooter:hover {
+  color: #f42a8b;
+  transform: scaleX(1.2);
+}
