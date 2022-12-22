@@ -32,6 +32,44 @@ window.onload = function () {
 // }
 // edadDeIngreso();
 
+//SEGUNDA PRE ENTREGA
+//OBJETO
+const entrada1 = {
+  tipo: "VIP",
+  precio: 100,
+  ubicación: "Platea",
+};
+
+const entrada2 = {
+  tipo: "Campo",
+  precio: 80,
+  ubicación: "Campo",
+};
+
+const entrada3 = {
+  tipo: "General",
+  precio: 50,
+  ubicación: "Deriva",
+};
+
+console.log(entrada1);
+console.log(entrada2);
+console.log(entrada3);
+
+//ARRAY
+const entradas = ["VIP", "Campo", "General"];
+alert("Recordá que nuestras entradas son " + entradas);
+
+//METODO
+//find()
+
+let entradaSeleccionada = prompt("Ingresá la entrada que querés comprar");
+alert(
+  "La entrada seleccionada es " +
+    entradas.find((entrada) => entrada === entradaSeleccionada)
+);
+
+//PRIMERA PRE ENTREGA
 //CICLO CON CONDICIONAL
 for (let i = 1; i <= 17; i++) {
   let edad = prompt("Ingresá tu edad");
