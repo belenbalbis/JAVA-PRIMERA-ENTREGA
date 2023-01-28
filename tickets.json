@@ -1,0 +1,16 @@
+[
+    {
+        "id": "silver",
+        "titulo": "SILVER",
+        "precio": 50
+    },
+    {
+        "id": "gold",
+        "titulo": "GOLD",
+        "precio": 150
+    },
+{
+    "id": "platinum",
+"titulo": "PLATINUM",
+"precio": 250
+}]

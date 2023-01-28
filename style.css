@@ -116,6 +116,30 @@ a {
   color: white;
 }
 
+.boton-volver {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  border-style: none;
+  margin-right: 10px;
+  font-family: "Asap", sans-serif;
+}
+
+.boton-volver:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: #f42a8b;
+}
+
 /*TICKET.HTML*/
 .titulo-principal {
   color: white;
@@ -280,6 +304,11 @@ a {
   transition: 0.5s;
   background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   color: #f42a8b;
+  
+}
+
+.disabled {
+  display: none;
 }
 /*MAIN*/
 .main {
@@ -292,8 +321,14 @@ a {
   color: white;
   text-align: center;
   font-family: "Asap", sans-serif;
+  
 }
-
+.main1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .iscoming {
   padding-top: 30px;
   font-size: 30px;

@@ -91,7 +91,7 @@ window.onload = function () {
 //   }
 // }
 
-//TERCERA PRE ENTREGA JSON Y STORAGE
+//JSON Y STORAGE
 const botonColorMode = document.querySelector("#color-mode");
 const main = document.querySelector(".main");
 const navbar = document.querySelector(".navbar");
@@ -129,3 +129,5 @@ botonColorMode.addEventListener("click", () => {
     activarDarkMode();
   }
 });
+
+
